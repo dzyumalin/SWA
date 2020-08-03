@@ -1,0 +1,51 @@
+.about {
+    min-height: 1190px;
+    background-color: #ffffff;
+    &__messaging {
+        display: flex;
+    }
+    &__touch {
+        display: flex;
+    }
+    &__descr {
+        width: 544px;
+        margin-top: 33px;
+        color: #929292;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 27px;
+    }
+    &__wrapper {
+        margin-top: 226px;
+        margin-left: 96px;
+        &_touch {
+            margin-left: 0;
+            margin-right: 96px;
+        }
+    }
+    &__link {
+        display: block;
+        margin-top: 38px;
+        position: relative;
+        color: #0f7bff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 27px;
+        width: 100px;
+        &::after {
+            position: relative;
+            content: url("../../icons/about/arrow.svg");
+            width: 15px;
+            height: 11px;
+            top: -27px;
+            right: -105px;
+            display: block;
+        }
+    }
+    a {
+        &:hover {
+            text-decoration: none;
+            color: #0f7bff;
+        }
+    }
+}

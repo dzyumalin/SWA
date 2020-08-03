@@ -1,0 +1,34 @@
+.title {
+    z-index: 1;
+    position: relative;
+    color: #333333;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    &_header {
+        margin-top: 106px;
+    }
+    &_about {
+        text-align: left;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    &_how {
+        font-size: 32px;
+    }
+    &_pricing {
+        font-size: 32px;
+        text-align: left;
+    }
+    &_testimonials {
+        font-size: 32px;
+        text-align: left;
+    }
+    &_news {
+        font-size: 32px;
+    }
+    &_footer {
+        color: #fff;
+    }
+}

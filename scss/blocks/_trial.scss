@@ -1,0 +1,19 @@
+.trial {
+    min-height: 336px;
+    background-color: #f5fcfd;
+    padding: 134px 0 133px 0;
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+    &__wrapper {
+        margin-right: 162px;
+    }
+    &__subheader {
+        margin-top: 24px;
+        color: #929292;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 27px;
+    }
+}
