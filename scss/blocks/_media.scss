@@ -77,6 +77,11 @@
 }
 
 @media (max-width: 1200px) {
+    .pricing-plan {
+        &__wrapper {
+            margin-right: 30px;
+        }
+    }
     .title {
         &_testimonials {
             font-size: 31px;
