@@ -2,6 +2,7 @@
     .header {
         &__menu {
             justify-content: center;
+            margin-right: 0;
         }
     }
     .slick-dots {
@@ -13,13 +14,24 @@
             right: 5%;
         }
     }
+    .how {
+        &__items {
+            &:before {
+                left: 35%;
+            }
+        }
+    }
+    .testimonials {
+        background-size: contain;
+    }
 }
 
 @media (max-width: 1920px) {
     .header {
         &__menu {
-            margin-top: 40px;
+            margin-top: 20px;
             justify-content: flex-start;
+            margin-right: 100px;
         }
     }
     .button {
@@ -30,6 +42,13 @@
     }
     .slick-dots {
         left: 23%;
+    }
+    .how {
+        &__items {
+            &:before {
+                left: 30%;
+            }
+        }
     }
 }
 
@@ -43,13 +62,56 @@
     .slick-dots {
         left: 27%;
     }
+    .how {
+        &__items {
+            &:before {
+                left: 28%;
+            }
+        }
+    }
+    .testimonials {
+        &__content {
+            padding: 130px 80px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
+    .title {
+        &_testimonials {
+            font-size: 31px;
+        }
+    }
+    .testimonials {
+        background-position: top 0 left -50%;
+    }
+    .button {
+        &_nav {
+            margin-left: 10px;
+        }
+    }
+    .header {
+        &__menu {
+            justify-content: flex-end;
+            a {
+                margin-right: 30px;
+                &:nth-last-child(2){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
     .about {
         overflow: hidden;
         &__descr {
             width: 100%;
+        }
+        &__wrapper {
+            margin-left: 50px;
+            &_touch {
+                margin-left: 0;
+                margin-right: 50px;
+            }
         }
     }
     .how {
@@ -61,7 +123,7 @@
         }
     }
     .slick-dots {
-        left: 37%;
+        left: 48%;
     }
     .footer {
         &__link {
@@ -87,6 +149,7 @@
     }
     @media (max-width: 992px) {
         .header {
+            z-index: unset;
             background-size: 195%;
             background-position: bottom 0% left 50%;
             &__menu {
@@ -94,7 +157,7 @@
                 top: -135%;
                 left: 0;
                 width: 40%;
-                height: 100%;
+                height: 107%;
                 background-color: rgba(0,0,0,.8);
                 flex-direction: column;
                 padding: 60px 0 0 0;
@@ -104,10 +167,11 @@
                     top: -8%;
                     justify-content: center;
                     align-items: center;
-                    li {
+                    a {
                         margin-right: 0;
-                        a {
-                            color: #0f7bff;
+                        color: #0f7bff;
+                        &:hover {
+                            color: #fff;
                         }
                     }
                 }
@@ -168,6 +232,7 @@
             left: 10%;
         }
         .testimonials {
+            background-position: top 0 left -25%;
             height: 400px;
             &__content {
                 padding: 0;
@@ -192,6 +257,16 @@
             padding: 30px 0 50px 0;
             .row {
                 margin-top: 10px;
+            }
+        }
+        .news-blog-left {
+            img {
+                width: 100%;
+            }
+        }
+        .news-blog-right {
+            img {
+                width: 100%;
             }
         }
         .trial {
@@ -287,6 +362,7 @@
         .header {
             height: 670px;
             padding: 0 30px;
+            background-position: bottom 0% left 8%;
             &__device {
                 top: 60%;
                 left: 17%;
@@ -315,6 +391,7 @@
             }
         }
         .about {
+            padding: 10px;
             &__messaging {
                 flex-direction: column;
             }
@@ -342,8 +419,7 @@
             }
         }
         .testimonials {
-            background-size: 165%;
-            background-position: bottom 0% left 40%;
+            background-position: bottom 0% left -70%;
         }
         .title {
             font-size: 24px;
@@ -363,6 +439,11 @@
         .news-blog-left {
             &__image {
                 width: 100%;
+            }
+        }
+        .news-blog-right {
+            img {
+                width: 30%;
             }
         }
     }
@@ -444,6 +525,11 @@
         }
     }
     @media (max-width: 320px) {
+        .hamburger {
+            &__wrapper {
+                right: 30px;
+            }
+        }
         .header {
             height: 420px;
             &__device {
@@ -474,7 +560,9 @@
             }
         }
         .features {
+            overflow: hidden;
             &__item {
+                min-width: 290px;
                 &:nth-child(2) {
                     margin: 10px;
                 }
